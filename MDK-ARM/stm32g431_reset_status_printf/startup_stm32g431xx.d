@@ -1,0 +1,1 @@
+stm32g431_reset_status_printf\startup_stm32g431xx.o: startup_stm32g431xx.s
