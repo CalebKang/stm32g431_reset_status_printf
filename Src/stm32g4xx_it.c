@@ -127,6 +127,8 @@ void HardFault_Handler(void)
 		Print_ResetStatus();
     printf("***** Call HardFault Handler!!!\r\n");
 		Delay(1000);
+		__NVIC_SystemReset();	//software reset Trigger
+		Delay(1000);
     /* USER CODE END W1_HardFault_IRQn 0 */
   }
 }
@@ -150,6 +152,8 @@ void MemManage_Handler(void)
     /* USER CODE BEGIN W1_MemoryManagement_IRQn 0 */
 		Print_ResetStatus();
     printf("***** Call MemManage Handler!!!\r\n");
+		Delay(1000);
+		__NVIC_SystemReset();	//software reset Trigger
 		Delay(1000);
     /* USER CODE END W1_MemoryManagement_IRQn 0 */
   }
@@ -175,6 +179,8 @@ void BusFault_Handler(void)
 		Print_ResetStatus();		
     printf("***** Call BusFault Handler!!!\r\n");
 		Delay(1000);
+		__NVIC_SystemReset();	//software reset Trigger
+		Delay(1000);
     /* USER CODE END W1_BusFault_IRQn 0 */
   }
 }
@@ -198,6 +204,8 @@ void UsageFault_Handler(void)
     /* USER CODE BEGIN W1_UsageFault_IRQn 0 */
 		Print_ResetStatus();		
     printf("***** Call UsageFault Handler!!!\r\n");
+		Delay(1000);
+		__NVIC_SystemReset();	//software reset Trigger
 		Delay(1000);
     /* USER CODE END W1_UsageFault_IRQn 0 */
   }
